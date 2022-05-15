@@ -5,7 +5,7 @@
 #include "GLTFLoader.h"
 
 static const int kMaxLineLength = 2048;
-bool Loader::LoadSceneFromFile(const std::string& filename, Scene* scene, RenderOptions& renderOptions)
+bool LoadSceneFromFile(const std::string& filename, Scene* scene, RenderOptions& renderOptions)
 {
     FILE* file;
     file = fopen(filename.c_str(), "r");

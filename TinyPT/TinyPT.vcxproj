@@ -122,7 +122,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)Src;$(ProjectDir)ThirdParty\SDL2\include;$(ProjectDir)ThirdParty\tinygltf;$(ProjectDir)ThirdParty\oidn\include;$(ProjectDir)ThirdParty\tinyobjloader;$(ProjectDir)ThirdParty\tinydir;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\glew\include;$(ProjectDir)ThirdParty\stb;$(ProjectDir)ThirdParty\gl3w;$(ProjectDir)ThirdParty\imguizmo;$(ProjectDir)ThirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <UseFullPaths>false</UseFullPaths>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
