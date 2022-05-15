@@ -12,13 +12,11 @@
 #include "ImGuizmo.h"
 #include "tinydir.h"
 
-
 #define STB_IMAGE_IMPLEMENTATION
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb/stb_image.h"
 #include "stb/stb_image_write.h"
 using namespace std;
-
 
 std::string shadersDir = "../src/shaders/";
 std::string assetsDir = "./assets/";
@@ -27,7 +25,7 @@ std::string envMapDir = "./assets/HDR/";
 std::vector<std::string> sceneFiles;
 std::vector<std::string> envMaps;
 
-
+float mouseSensitivity = 0.01f;
 bool keyPressed = false;
 int sampleSceneIdx = 0;
 int selectedInstance = 0;
@@ -35,6 +33,8 @@ int selectedInstance = 0;
 double lastTime = SDL_GetTicks();
 int envMapIdx = 0;
 bool done = false;
+
+RenderOptions renderOptions;
 
 struct LoopData
 {
@@ -168,7 +168,6 @@ void MainLoop(void* arg)
 
     ImGui::Render();
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-
     SDL_GL_SwapWindow(loopdata.mWindow);
 }
 
@@ -179,17 +178,11 @@ int main(int argc, char* argv[])
 
     std::string sceneFile;
 
-    if (!sceneFile.empty())
-    {
-        GetEnvMaps();
-        // LoadScene(sceneFile);
-    }
-    else
-    {
-        GetSceneFiles();
-        GetEnvMaps();
-        // LoadScene(sceneFiles[sampleSceneIdx]);
-    }
+
+    GetSceneFiles();
+    GetEnvMaps();
+    // LoadScene(sceneFiles[sampleSceneIdx]);
+
 
 
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) != 0)

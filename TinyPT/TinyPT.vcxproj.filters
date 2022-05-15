@@ -52,6 +52,15 @@
     <Filter Include="源文件\ThirdParty\tinygltf">
       <UniqueIdentifier>{91e703c3-de8c-4fcf-9811-3ea180698aa3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Core\Render">
+      <UniqueIdentifier>{b6b590cd-9cac-4ea8-8cd0-efbaf074b3a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Core\Material">
+      <UniqueIdentifier>{3fc1600d-7473-4b19-99da-3cd9fd7c9f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ThirdParty\stb">
+      <UniqueIdentifier>{e466507b-7fd5-4fec-9e74-a3d6a34e4894}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp">
@@ -104,6 +113,27 @@
     </ClCompile>
     <ClCompile Include="ThirdParty\imguizmo\ImGuizmo.cpp">
       <Filter>源文件\ThirdParty\imguizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\Renderer.cpp">
+      <Filter>源文件\Core\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\Shader.cpp">
+      <Filter>源文件\Core\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\ShaderProgram.cpp">
+      <Filter>源文件\Core\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\Texture.cpp">
+      <Filter>源文件\Core\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\Quad.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Core\Camera.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Loaders\GLTFLoader.cpp">
+      <Filter>源文件\Loader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +211,48 @@
     </ClInclude>
     <ClInclude Include="ThirdParty\imguizmo\ImGuizmo.h">
       <Filter>源文件\ThirdParty\imguizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Renderer.h">
+      <Filter>源文件\Core\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\ShaderInclude.h">
+      <Filter>源文件\Core\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Shader.h">
+      <Filter>源文件\Core\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\ShaderProgram.h">
+      <Filter>源文件\Core\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Texture.h">
+      <Filter>源文件\Core\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Material.h">
+      <Filter>源文件\Core\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Pch.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Quad.h">
+      <Filter>源文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Core\Camera.h">
+      <Filter>源文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Loaders\GLTFLoader.h">
+      <Filter>源文件\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\tinygltf\tiny_gltf.h">
+      <Filter>源文件\ThirdParty\tinygltf</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\stb\stb_image.h">
+      <Filter>源文件\ThirdParty\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\stb\stb_image_resize.h">
+      <Filter>源文件\ThirdParty\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\stb\stb_image_write.h">
+      <Filter>源文件\ThirdParty\stb</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -153,9 +153,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\Core\Camera.cpp" />
     <ClCompile Include="Src\Core\EnvironmentMap.cpp" />
     <ClCompile Include="Src\Core\Mesh.cpp" />
+    <ClCompile Include="Src\Core\Quad.cpp" />
+    <ClCompile Include="Src\Core\Renderer.cpp" />
     <ClCompile Include="Src\Core\Scene.cpp" />
+    <ClCompile Include="Src\Core\Shader.cpp" />
+    <ClCompile Include="Src\Core\ShaderProgram.cpp" />
+    <ClCompile Include="Src\Core\Texture.cpp" />
+    <ClCompile Include="Src\Loaders\GLTFLoader.cpp" />
     <ClCompile Include="Src\Loaders\Loader.cpp" />
     <ClCompile Include="Src\Main.cpp" />
     <ClCompile Include="ThirdParty\gl3w\GL\gl3w.c" />
@@ -172,9 +179,19 @@
     <ClCompile Include="ThirdParty\RadeonRays\split_bvh.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\Core\Camera.h" />
     <ClInclude Include="Src\Core\EnvironmentMap.h" />
+    <ClInclude Include="Src\Core\Material.h" />
     <ClInclude Include="Src\Core\Mesh.h" />
+    <ClInclude Include="Src\Core\Pch.h" />
+    <ClInclude Include="Src\Core\Quad.h" />
+    <ClInclude Include="Src\Core\Renderer.h" />
     <ClInclude Include="Src\Core\Scene.h" />
+    <ClInclude Include="Src\Core\Shader.h" />
+    <ClInclude Include="Src\Core\ShaderInclude.h" />
+    <ClInclude Include="Src\Core\ShaderProgram.h" />
+    <ClInclude Include="Src\Core\Texture.h" />
+    <ClInclude Include="Src\Loaders\GLTFLoader.h" />
     <ClInclude Include="Src\Loaders\Loader.h" />
     <ClInclude Include="Src\Math\Mat4.h" />
     <ClInclude Include="Src\Math\MathUtils.h" />
@@ -195,7 +212,11 @@
     <ClInclude Include="ThirdParty\RadeonRays\bvh.h" />
     <ClInclude Include="ThirdParty\RadeonRays\bvh_translator.h" />
     <ClInclude Include="ThirdParty\RadeonRays\split_bvh.h" />
+    <ClInclude Include="ThirdParty\stb\stb_image.h" />
+    <ClInclude Include="ThirdParty\stb\stb_image_resize.h" />
+    <ClInclude Include="ThirdParty\stb\stb_image_write.h" />
     <ClInclude Include="ThirdParty\tinydir\tinydir.h" />
+    <ClInclude Include="ThirdParty\tinygltf\tiny_gltf.h" />
     <ClInclude Include="ThirdParty\tinyobjloader\tiny_obj_loader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
